@@ -1,0 +1,1059 @@
+CRITICAL - 2023-03-14 00:07:06 --> print_r() expects at most 2 parameters, 3 given
+in APPPATH/Controllers/Students.php on line 84.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Students.php(84): print_r()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 00:10:39 --> Undefined index: student_id
+in APPPATH/Controllers/Students.php on line 82.
+ 1 APPPATH/Controllers/Students.php(82): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 00:10:46 --> Undefined index: student_id
+in APPPATH/Controllers/Students.php on line 82.
+ 1 APPPATH/Controllers/Students.php(82): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 00:11:19 --> Undefined index: student_id
+in APPPATH/Controllers/Students.php on line 82.
+ 1 APPPATH/Controllers/Students.php(82): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 00:14:30 --> mysqli_sql_exception: Unknown column 'students.academies_users_id as students_academies_users_id students.companies_users_id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 00:14:30 --> Unknown column 'students.academies_users_id as students_academies_users_id students.companies_users_id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 00:15:21 --> mysqli_sql_exception: Column 'id' in field list is ambiguous in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 00:15:21 --> Column 'id' in field list is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 00:15:31 --> mysqli_sql_exception: Column 'users_id' in field list is ambiguous in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 00:15:31 --> Column 'users_id' in field list is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 00:15:39 --> mysqli_sql_exception: Unknown column 'academies_users_id as students_academies_users_id companies_users_id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 00:15:39 --> Unknown column 'academies_users_id as students_academies_users_id companies_users_id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 00:16:23 --> mysqli_sql_exception: Unknown column 'students.academies_users_id as students_academies_users_id companies_users_id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 00:16:23 --> Unknown column 'students.academies_users_id as students_academies_users_id companies_users_id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 00:16:36 --> mysqli_sql_exception: Unknown column 'students.academies_users_id companies_users_id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 00:16:36 --> Unknown column 'students.academies_users_id companies_users_id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 00:16:36 --> mysqli_sql_exception: Unknown column 'students.academies_users_id companies_users_id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 00:16:36 --> Unknown column 'students.academies_users_id companies_users_id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 00:16:36 --> mysqli_sql_exception: Unknown column 'students.academies_users_id companies_users_id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 00:16:36 --> Unknown column 'students.academies_users_id companies_users_id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 00:16:37 --> mysqli_sql_exception: Unknown column 'students.academies_users_id companies_users_id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 00:16:37 --> Unknown column 'students.academies_users_id companies_users_id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 00:16:37 --> mysqli_sql_exception: Unknown column 'students.academies_users_id companies_users_id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 00:16:37 --> Unknown column 'students.academies_users_id companies_users_id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 00:16:37 --> mysqli_sql_exception: Unknown column 'students.academies_users_id companies_users_id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 00:16:37 --> Unknown column 'students.academies_users_id companies_users_id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 00:16:37 --> mysqli_sql_exception: Unknown column 'students.academies_users_id companies_users_id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 00:16:37 --> Unknown column 'students.academies_users_id companies_users_id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 00:17:05 --> Undefined index: id
+in APPPATH/Controllers/Students.php on line 57.
+ 1 APPPATH/Controllers/Students.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 00:17:25 --> Undefined index: id
+in APPPATH/Controllers/Students.php on line 57.
+ 1 APPPATH/Controllers/Students.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 00:17:26 --> Undefined index: id
+in APPPATH/Controllers/Students.php on line 57.
+ 1 APPPATH/Controllers/Students.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 00:17:27 --> Undefined index: id
+in APPPATH/Controllers/Students.php on line 57.
+ 1 APPPATH/Controllers/Students.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 00:17:27 --> Undefined index: id
+in APPPATH/Controllers/Students.php on line 57.
+ 1 APPPATH/Controllers/Students.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 00:18:06 --> Undefined index: hours
+in APPPATH/Controllers/Students.php on line 90.
+ 1 APPPATH/Controllers/Students.php(90): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 00:25:36 --> Undefined index: course_id
+in APPPATH/Controllers/Students.php on line 82.
+ 1 APPPATH/Controllers/Students.php(82): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 00:25:42 --> Undefined index: course_id
+in APPPATH/Controllers/Students.php on line 82.
+ 1 APPPATH/Controllers/Students.php(82): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 00:33:29 --> Division by zero
+in APPPATH/Controllers/Students.php on line 95.
+ 1 APPPATH/Controllers/Students.php(95): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 00:33:46 --> Division by zero
+in APPPATH/Controllers/Students.php on line 95.
+ 1 APPPATH/Controllers/Students.php(95): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 00:45:26 --> mysqli_sql_exception: Unknown column 'student.users_id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 00:45:26 --> Unknown column 'student.users_id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 00:45:51 --> mysqli_sql_exception: Unknown column 'student.users_id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 00:45:51 --> Unknown column 'student.users_id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(127): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(48): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 00:47:09 --> Undefined index: course_id
+in APPPATH/Controllers/Students.php on line 82.
+ 1 APPPATH/Controllers/Students.php(82): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 00:51:06 --> Undefined index: courses_hours
+in APPPATH/Controllers/Students.php on line 88.
+ 1 APPPATH/Controllers/Students.php(88): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 00:56:14 --> Undefined index: total_hours_object
+in APPPATH/Controllers/Students.php on line 93.
+ 1 APPPATH/Controllers/Students.php(93): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 01:01:11 --> Undefined index: course_hours
+in APPPATH/Controllers/Students.php on line 88.
+ 1 APPPATH/Controllers/Students.php(88): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 01:01:35 --> Undefined index: course_hours
+in APPPATH/Controllers/Students.php on line 88.
+ 1 APPPATH/Controllers/Students.php(88): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 01:37:53 --> mysqli_sql_exception: Unknown column 'report_types_id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(52): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(79): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 01:37:53 --> Unknown column 'report_types_id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(52): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(79): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:37:15 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(90): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/Academytutor.php(18): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Academytutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:38:28 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(90): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/AcademyTutor.php(18): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:38:49 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(90): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/AcademyTutor.php(18): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:38:50 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(90): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/AcademyTutor.php(18): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:39:55 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(89): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/AcademyTutor.php(18): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:40:12 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(89): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/AcademyTutor.php(18): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:40:13 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(89): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/AcademyTutor.php(18): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:40:25 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(89): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/AcademyTutor.php(18): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:40:26 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(89): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/AcademyTutor.php(18): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:40:26 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(89): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/AcademyTutor.php(18): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:41:09 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(91): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/AcademyTutor.php(18): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:41:50 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(91): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/AcademyTutor.php(18): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:43:32 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(91): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/AcademyTutor.php(18): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:45:48 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(91): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/AcademyTutor.php(20): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:45:50 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(91): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/AcademyTutor.php(20): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:46:28 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(91): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/AcademyTutor.php(20): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:46:30 --> Array to string conversion
+in SYSTEMPATH/Model.php on line 237.
+ 1 SYSTEMPATH/Model.php(237): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 3 APPPATH/Models/AcademyTutorModel.php(91): CodeIgniter\BaseModel->findAll()
+ 4 APPPATH/Controllers/AcademyTutor.php(20): App\Models\AcademyTutorModel->getAll()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 02:54:59 --> Call to undefined method App\Models\AcademyTutorModel::getAll
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/AcademyTutor.php(25): CodeIgniter\Model->__call()
+ 2 APPPATH/Controllers/AcademyTutor.php(16): App\Controllers\AcademyTutor->getTeachers()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 04:14:19 --> mysqli_sql_exception: Unknown column 'companies_id' in 'where clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CompaniesModel.php(119): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Companies.php(55): App\Models\CompaniesModel->getAcademyUsersOfCompany()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersOfCompany()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 04:14:19 --> Unknown column 'companies_id' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CompaniesModel.php(119): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Companies.php(55): App\Models\CompaniesModel->getAcademyUsersOfCompany()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersOfCompany()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 04:16:14 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CompaniesModel.php(121): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Companies.php(55): App\Models\CompaniesModel->getAcademyUsersOfCompany()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersOfCompany()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 04:16:14 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CompaniesModel.php(121): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Companies.php(55): App\Models\CompaniesModel->getAcademyUsersOfCompany()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersOfCompany()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 04:16:15 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CompaniesModel.php(121): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Companies.php(55): App\Models\CompaniesModel->getAcademyUsersOfCompany()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersOfCompany()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 04:16:15 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CompaniesModel.php(121): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Companies.php(55): App\Models\CompaniesModel->getAcademyUsersOfCompany()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersOfCompany()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 04:16:16 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CompaniesModel.php(121): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Companies.php(55): App\Models\CompaniesModel->getAcademyUsersOfCompany()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersOfCompany()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 04:16:16 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CompaniesModel.php(121): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Companies.php(55): App\Models\CompaniesModel->getAcademyUsersOfCompany()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersOfCompany()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 04:16:16 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CompaniesModel.php(121): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Companies.php(55): App\Models\CompaniesModel->getAcademyUsersOfCompany()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersOfCompany()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 04:16:16 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CompaniesModel.php(121): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Companies.php(55): App\Models\CompaniesModel->getAcademyUsersOfCompany()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersOfCompany()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 04:23:00 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH/Controllers/Companies.php on line 72.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersGroupCompanyId()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 04:42:29 --> mysqli_sql_exception: Unknown column 'user.id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CompaniesModel.php(129): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Companies.php(68): App\Models\CompaniesModel->getAcademyUsers()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersGroupCompanyId()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 04:42:29 --> Unknown column 'user.id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CompaniesModel.php(129): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Companies.php(68): App\Models\CompaniesModel->getAcademyUsers()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersGroupCompanyId()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 04:43:18 --> mysqli_sql_exception: Unknown column 'user.id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CompaniesModel.php(129): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Companies.php(68): App\Models\CompaniesModel->getAcademyUsers()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersGroupCompanyId()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 04:43:18 --> Unknown column 'user.id' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CompaniesModel.php(129): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Companies.php(68): App\Models\CompaniesModel->getAcademyUsers()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersGroupCompanyId()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 04:44:07 --> mysqli_sql_exception: Unknown column 'companies.users_id' in 'on clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CompaniesModel.php(129): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Companies.php(68): App\Models\CompaniesModel->getAcademyUsers()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersGroupCompanyId()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 04:44:07 --> Unknown column 'companies.users_id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CompaniesModel.php(129): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Companies.php(68): App\Models\CompaniesModel->getAcademyUsers()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Companies->getAcademyUsersGroupCompanyId()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 06:50:11 --> You cannot use "getCompiledInsert()" in "App\Models\UsersModel". This is a method of the Query Builder Class.
+in SYSTEMPATH/Model.php on line 858.
+ 1 SYSTEMPATH/Model.php(858): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable()
+ 2 SYSTEMPATH/Model.php(838): CodeIgniter\Model->checkBuilderMethod()
+ 3 APPPATH/Models/UsersModel.php(79): CodeIgniter\Model->__call()
+ 4 APPPATH/Controllers/Students.php(145): App\Models\UsersModel->insertUser()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->create()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 08:47:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as `academies_users`.*, `users`.`id` as `user_id`, `users`.`email` as `user_e...' at line 1 in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/AcademyTutorModel.php(87): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/AcademyTutor.php(25): App\Models\AcademyTutorModel->getTeachers()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/AcademyTutor.php(16): App\Controllers\AcademyTutor->getTeachers()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-14 08:47:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as `academies_users`.*, `users`.`id` as `user_id`, `users`.`email` as `user_e...' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/AcademyTutorModel.php(87): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/AcademyTutor.php(25): App\Models\AcademyTutorModel->getTeachers()
+ 6 APPPATH/Controllers/AcademyTutor.php(16): App\Controllers\AcademyTutor->getTeachers()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AcademyTutor->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-14 09:19:16 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dualapp`.`courses_hours`, CONSTRAINT `fk-courses_hours-report_types_id` FOREIGN KEY (`report_types_id`) REFERENCES `report_types` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(156): CodeIgniter\Model->insert()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->create()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-14 09:19:16 --> Cannot add or update a child row: a foreign key constraint fails (`dualapp`.`courses_hours`, CONSTRAINT `fk-courses_hours-report_types_id` FOREIGN KEY (`report_types_id`) REFERENCES `report_types` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/Students.php(156): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->create()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 09:20:56 --> Undefined index: hours_total
+in APPPATH/Controllers/Students.php on line 93.
+ 1 APPPATH/Controllers/Students.php(93): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 09:21:09 --> Undefined index: hours_total
+in APPPATH/Controllers/Students.php on line 93.
+ 1 APPPATH/Controllers/Students.php(93): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 09:21:15 --> Undefined index: hours_total
+in APPPATH/Controllers/Students.php on line 93.
+ 1 APPPATH/Controllers/Students.php(93): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Students.php(20): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 09:21:17 --> Undefined index: hours_total
+in APPPATH/Controllers/Students.php on line 93.
+ 1 APPPATH/Controllers/Students.php(93): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Students.php(20): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 09:21:27 --> Undefined index: hours_total
+in APPPATH/Controllers/Students.php on line 93.
+ 1 APPPATH/Controllers/Students.php(93): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 10:35:24 --> Call to a member function find() on null
+in APPPATH/Controllers/Students.php on line 189.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->update()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 10:39:22 --> Call to a member function find() on null
+in APPPATH/Controllers/Students.php on line 189.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->update()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 10:39:42 --> Call to a member function find() on null
+in APPPATH/Controllers/Students.php on line 188.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->update()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 10:39:43 --> Call to a member function find() on null
+in APPPATH/Controllers/Students.php on line 188.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->update()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 10:39:43 --> Call to a member function find() on null
+in APPPATH/Controllers/Students.php on line 188.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->update()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 10:39:43 --> Call to a member function find() on null
+in APPPATH/Controllers/Students.php on line 188.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->update()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-14 10:39:43 --> Call to a member function find() on null
+in APPPATH/Controllers/Students.php on line 188.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->update()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

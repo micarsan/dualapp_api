@@ -1,0 +1,170 @@
+ERROR - 2023-02-24 12:36:26 --> mysqli_sql_exception: Unknown column 'company_user.id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CompaniesModel.php(104): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Companies.php(42): App\Models\CompaniesModel->getCompaniesForAcademyUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Companies->getCompaniesForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-24 12:36:26 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 242.
+ 1 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/CompaniesModel.php(104): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Companies.php(42): App\Models\CompaniesModel->getCompaniesForAcademyUserId()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Companies->getCompaniesForAcademyUser()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-24 13:10:35 --> mysqli_sql_exception: Unknown column 'academies_companies.id_academies_id' in 'on clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CompaniesModel.php(108): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Companies.php(42): App\Models\CompaniesModel->getCompaniesForAcademyUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Companies->getCompaniesForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-24 13:10:35 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 242.
+ 1 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/CompaniesModel.php(108): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Companies.php(42): App\Models\CompaniesModel->getCompaniesForAcademyUserId()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Companies->getCompaniesForAcademyUser()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-24 13:11:52 --> mysqli_sql_exception: Unknown column 'company_user.id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CompaniesModel.php(108): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Companies.php(42): App\Models\CompaniesModel->getCompaniesForAcademyUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Companies->getCompaniesForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-24 13:11:52 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 242.
+ 1 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/CompaniesModel.php(108): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Companies.php(42): App\Models\CompaniesModel->getCompaniesForAcademyUserId()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Companies->getCompaniesForAcademyUser()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-24 13:12:10 --> mysqli_sql_exception: Unknown column 'company_user.id' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CompaniesModel.php(108): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Companies.php(42): App\Models\CompaniesModel->getCompaniesForAcademyUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Companies->getCompaniesForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-24 13:12:10 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 242.
+ 1 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/CompaniesModel.php(108): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Companies.php(42): App\Models\CompaniesModel->getCompaniesForAcademyUserId()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Companies->getCompaniesForAcademyUser()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-24 13:14:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'academies_companies
+FROM `companies`
+JOIN `academies_companies` ON `companies...' at line 1 in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CompaniesModel.php(109): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Companies.php(42): App\Models\CompaniesModel->getCompaniesForAcademyUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Companies->getCompaniesForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-24 13:14:02 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 242.
+ 1 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/CompaniesModel.php(109): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Companies.php(42): App\Models\CompaniesModel->getCompaniesForAcademyUserId()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Companies->getCompaniesForAcademyUser()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-24 13:14:14 --> mysqli_sql_exception: Unknown table 'companies.*academies_companies' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CompaniesModel.php(109): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Companies.php(42): App\Models\CompaniesModel->getCompaniesForAcademyUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Companies->getCompaniesForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-24 13:14:14 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 242.
+ 1 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/CompaniesModel.php(109): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Companies.php(42): App\Models\CompaniesModel->getCompaniesForAcademyUserId()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Companies->getCompaniesForAcademyUser()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-24 13:15:13 --> mysqli_sql_exception: Unknown column 'academies_companies.id_academies_id' in 'on clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CompaniesModel.php(110): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Companies.php(42): App\Models\CompaniesModel->getCompaniesForAcademyUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Companies->getCompaniesForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-24 13:15:13 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 242.
+ 1 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 2 APPPATH/Models/CompaniesModel.php(110): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Companies.php(42): App\Models\CompaniesModel->getCompaniesForAcademyUserId()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Companies->getCompaniesForAcademyUser()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

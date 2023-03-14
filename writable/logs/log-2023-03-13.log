@@ -1,0 +1,1054 @@
+CRITICAL - 2023-03-13 18:37:50 --> Undefined property: App\Controllers\Students::$rest
+in APPPATH/Controllers/Students.php on line 20.
+ 1 APPPATH/Controllers/Students.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 18:39:03 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::_compile_select()
+in APPPATH/Models/StudentsModel.php on line 78.
+ 1 APPPATH/Controllers/Students.php(19): App\Models\StudentsModel->getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 18:39:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::last_query()
+in APPPATH/Models/StudentsModel.php on line 78.
+ 1 APPPATH/Controllers/Students.php(19): App\Models\StudentsModel->getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 18:40:34 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::last_query()
+in APPPATH/Models/StudentsModel.php on line 80.
+ 1 APPPATH/Controllers/Students.php(19): App\Models\StudentsModel->getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 18:40:48 --> Call to undefined method App\Models\StudentsModel::last_query
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Models/StudentsModel.php(80): CodeIgniter\Model->__call()
+ 2 APPPATH/Controllers/Students.php(19): App\Models\StudentsModel->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 18:40:51 --> Call to undefined method App\Models\StudentsModel::last_query
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Models/StudentsModel.php(80): CodeIgniter\Model->__call()
+ 2 APPPATH/Controllers/Students.php(19): App\Models\StudentsModel->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 18:40:51 --> Call to undefined method App\Models\StudentsModel::last_query
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Models/StudentsModel.php(80): CodeIgniter\Model->__call()
+ 2 APPPATH/Controllers/Students.php(19): App\Models\StudentsModel->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 18:40:52 --> Call to undefined method App\Models\StudentsModel::last_query
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Models/StudentsModel.php(80): CodeIgniter\Model->__call()
+ 2 APPPATH/Controllers/Students.php(19): App\Models\StudentsModel->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 18:41:02 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::last_query()
+in APPPATH/Models/StudentsModel.php on line 80.
+ 1 APPPATH/Controllers/Students.php(19): App\Models\StudentsModel->getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 18:48:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*, `languages`.`name` as `languages_name`, `countries`.`name` as `countries_...' at line 1 in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(80): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(19): App\Models\StudentsModel->getAll()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->index()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 18:48:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.*, `languages`.`name` as `languages_name`, `countries`.`name` as `countries_...' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(80): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(19): App\Models\StudentsModel->getAll()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 18:49:35 --> mysqli_sql_exception: Unknown column 'users.countries_id as users_countries_idacademies.name' in 'field list' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(80): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(19): App\Models\StudentsModel->getAll()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->index()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 18:49:35 --> Unknown column 'users.countries_id as users_countries_idacademies.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(80): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(19): App\Models\StudentsModel->getAll()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 18:49:49 --> mysqli_sql_exception: Unknown column 'academies_users.id_academies' in 'on clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(80): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(19): App\Models\StudentsModel->getAll()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->index()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 18:49:49 --> Unknown column 'academies_users.id_academies' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(80): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(19): App\Models\StudentsModel->getAll()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 18:54:59 --> syntax error, unexpected '.'
+in APPPATH/Models/StudentsModel.php on line 154.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 APPPATH/Controllers/Students.php(44): spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 19:08:22 --> mysqli_sql_exception: Unknown column 'report_daily.repor_types_id' in 'on clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/ReportsModel.php(93): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(54): App\Models\ReportsModel->getTotalHoursByType()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 19:08:22 --> Unknown column 'report_daily.repor_types_id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/ReportsModel.php(93): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(54): App\Models\ReportsModel->getTotalHoursByType()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 19:09:08 --> mysqli_sql_exception: Unknown column 'report_daily.report_types_id' in 'on clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/ReportsModel.php(93): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(54): App\Models\ReportsModel->getTotalHoursByType()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 19:09:08 --> Unknown column 'report_daily.report_types_id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/ReportsModel.php(93): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(54): App\Models\ReportsModel->getTotalHoursByType()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 19:09:42 --> Undefined variable: report_type_id
+in APPPATH/Controllers/Students.php on line 62.
+ 1 APPPATH/Controllers/Students.php(62): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 19:24:17 --> mysqli_sql_exception: Unknown column 'academies_users.id_user' in 'on clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(118): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(47): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 19:24:17 --> Unknown column 'academies_users.id_user' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(118): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(47): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 19:28:03 --> mysqli_sql_exception: Unknown column 'company_tutor.companies_id' in 'on clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(119): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(47): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 19:28:03 --> Unknown column 'company_tutor.companies_id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(119): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(47): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 19:29:54 --> mysqli_sql_exception: Unknown column 'companies.id' in 'on clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(120): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(47): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 19:29:54 --> Unknown column 'companies.id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(120): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(47): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 19:29:57 --> mysqli_sql_exception: Unknown column 'companies.id' in 'on clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(120): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(47): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 19:29:57 --> Unknown column 'companies.id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(120): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(47): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 20:54:40 --> "Config\Cors" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass()
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 20:56:46 --> "Cors" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 20:58:58 --> "CorsFilter" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 21:00:39 --> "CorsFilter" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 21:02:11 --> "CorsFilter" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 21:02:22 --> "CorsFilter" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 21:02:23 --> "CorsFilter" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 21:02:24 --> "CorsFilter" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 21:02:24 --> "CorsFilter" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 21:02:24 --> "CorsFilter" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 21:02:40 --> "CorsFilter" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 21:08:08 --> Class 'App\Filters\Options' not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 21:08:14 --> Class 'App\Filters\Options' not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 21:08:15 --> Class 'App\Filters\Options' not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 21:08:32 --> Declaration of App\Filters\Options::before(CodeIgniter\HTTP\RequestInterface $request) must be compatible with CodeIgniter\Filters\FilterInterface::before(CodeIgniter\HTTP\RequestInterface $request, $arguments = NULL)
+in APPPATH/Filters/Options.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-13 21:26:50 --> Call to undefined function App\Controllers\emtpy()
+in APPPATH/Controllers/Students.php on line 61.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:35:58 --> mysqli_sql_exception: Not unique table/alias: 'courses_hours' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/StudentsModel.php(124): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(47): App\Models\StudentsModel->getStudentForAcademiesUserId()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:35:58 --> Not unique table/alias: 'courses_hours'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/StudentsModel.php(124): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(47): App\Models\StudentsModel->getStudentForAcademiesUserId()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 23:53:25 --> syntax error, unexpected '$tmp_counter' (T_VARIABLE)
+in APPPATH/Controllers/Students.php on line 93.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(892): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:53:58 --> mysqli_sql_exception: Unknown table 'dualapp.courses_hours' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:53:58 --> Unknown table 'dualapp.courses_hours'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(41): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-13 23:55:15 --> syntax error, unexpected 'else' (T_ELSE)
+in APPPATH/Controllers/Students.php on line 104.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(892): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:55:36 --> mysqli_sql_exception: Unknown table 'dualapp.courses_hours' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:55:36 --> Unknown table 'dualapp.courses_hours'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(41): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:55:58 --> mysqli_sql_exception: Unknown table 'dualapp.courses_hours' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:55:58 --> Unknown table 'dualapp.courses_hours'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(41): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:55:59 --> mysqli_sql_exception: Unknown table 'dualapp.courses_hours' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:55:59 --> Unknown table 'dualapp.courses_hours'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(41): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:56:23 --> mysqli_sql_exception: Unknown table 'dualapp.courses_hours' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:56:23 --> Unknown table 'dualapp.courses_hours'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:56:24 --> mysqli_sql_exception: Unknown table 'dualapp.courses_hours' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:56:24 --> Unknown table 'dualapp.courses_hours'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:56:24 --> mysqli_sql_exception: Unknown table 'dualapp.courses_hours' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:56:24 --> Unknown table 'dualapp.courses_hours'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:56:24 --> mysqli_sql_exception: Unknown table 'dualapp.courses_hours' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:56:24 --> Unknown table 'dualapp.courses_hours'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:56:24 --> mysqli_sql_exception: Unknown table 'dualapp.courses_hours' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:56:24 --> Unknown table 'dualapp.courses_hours'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:57:04 --> mysqli_sql_exception: Unknown table 'dualapp.courses_hours' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:57:04 --> Unknown table 'dualapp.courses_hours'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:57:26 --> mysqli_sql_exception: Unknown column 'courses_hours.students_id' in 'where clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:57:26 --> Unknown column 'courses_hours.students_id' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:57:27 --> mysqli_sql_exception: Unknown column 'courses_hours.students_id' in 'where clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:57:27 --> Unknown column 'courses_hours.students_id' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:57:34 --> mysqli_sql_exception: Unknown column 'students_id' in 'where clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:57:34 --> Unknown column 'students_id' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:57:56 --> mysqli_sql_exception: Unknown column 'students_id' in 'where clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:57:56 --> Unknown column 'students_id' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:57:56 --> mysqli_sql_exception: Unknown column 'students_id' in 'where clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:57:56 --> Unknown column 'students_id' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:57:56 --> mysqli_sql_exception: Unknown column 'students_id' in 'where clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:57:56 --> Unknown column 'students_id' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:58:01 --> mysqli_sql_exception: Unknown column 'students_id' in 'where clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:58:01 --> Unknown column 'students_id' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:58:01 --> mysqli_sql_exception: Unknown column 'students_id' in 'where clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:58:01 --> Unknown column 'students_id' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:58:01 --> mysqli_sql_exception: Unknown column 'students_id' in 'where clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:58:01 --> Unknown column 'students_id' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:58:02 --> mysqli_sql_exception: Unknown column 'students_id' in 'where clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:58:02 --> Unknown column 'students_id' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:58:02 --> mysqli_sql_exception: Unknown column 'students_id' in 'where clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:58:02 --> Unknown column 'students_id' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:58:02 --> mysqli_sql_exception: Unknown column 'students_id' in 'where clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:58:02 --> Unknown column 'students_id' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-13 23:58:02 --> mysqli_sql_exception: Unknown column 'students_id' in 'where clause' in /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /var/www/dualapp.miguelcarmona.com/web/api/app/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 /var/www/dualapp.miguelcarmona.com/web/api/app/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+#8 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+#9 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/dualapp.miguelcarmona.com/web/api/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/dualapp.miguelcarmona.com/web/api/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-13 23:58:02 --> Unknown column 'students_id' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/CoursesModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Students.php(82): App\Models\CoursesModel->getHoursForStudenAndCourses()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Students->getStudentsForAcademyUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
